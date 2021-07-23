@@ -62,6 +62,8 @@ if(97<=i_A&&i_A>=100){
     }
     */
 
+    /*
+    //練習4(老師寫的)
     int i_Year = -1;
     cout <<"Enter the year(year >0):";
     cin >> i_Year;
@@ -88,6 +90,56 @@ if(97<=i_A&&i_A>=100){
                 cout<<i_Year<<" is a leap year.";
         }
     }
+    */
+
+    /*
+    //練習5
+    string str_A;
+    cout<<"Code:";
+    cin >>str_A;
+    string str_B ="ABC";
+    if(str_A[0] ==str_B[0]||str_A[0] ==str_B[1]||str_A[0] ==str_B[2]){
+        int i_C=(str_A[1]+str_A[2])%5;
+        char c_C;
+        int i_D;
+        string str_C;
+        if(i_C==0){
+            c_C='L';
+        }
+        else if(i_C==1){
+            c_C='B';
+        }
+        else if(i_C==2){
+            c_C='E';
+        }
+        else if(i_C==3){
+            c_C='D';
+        }
+        else if(i_C==4){
+            c_C='S';
+        }
+        if(str_A[0] ==str_B[0]){
+            str_C="employee";
+        }
+        else if(str_A[0]==str_B[1]){
+            str_C="student";
+        }
+        else if(str_A[0]==str_B[2]){
+            str_C="visitor";
+        }
+        i_D =static_cast<int>(char(str_A[0]));
+        i_D= (i_D+str_A[1]-str_A[2])%str_A[3]+str_A[4];
+        if(i_D==7){
+            cout<<str_C<<endl<<c_C<<"\n"<<"Checked, welcome!";
+        }
+        else{
+            cout << "Error code";
+        }
+    }
+    else{
+        cout << "Error code";
+    }
+    */
 return 0;
 
 }
