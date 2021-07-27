@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     /*
-    //絤策3
+    //練習3
     for(int i_A=1;i_A<=20;i_A++){
         if(i_A%3 ==0){
             continue;
@@ -25,8 +25,8 @@ int main()
     */
 
     /*
-    //絤策4
-    //и糶
+    //練習4
+    //我寫的
     for(int i_C=1;i_C<=9;i_C++){
         for(int i_D=9;(i_D-i_C)>0;i_D--){
                 cout<<" ";
@@ -37,7 +37,7 @@ int main()
         cout<<endl;
     }
 
-    //ρ畍糶
+    //老師寫的
     for(int i_Ct=-1;i_Ct <=17;i_Ct+=2){
 
         for(int i_Ct2 =(17/2) - (i_Ct/2);i_Ct2 >=0;i_Ct2--){
@@ -52,7 +52,7 @@ int main()
     */
 
     /*
-    //絤策5
+    //練習5
     for(int i_E=1;i_E<=9;i_E++){
         for(int i_F=1;i_F<=9;i_F++){
             cout<<i_E<<"*"<<i_F<<"="<<i_E*i_F<<",\t";
@@ -65,14 +65,14 @@ int main()
     */
 
     /*
-    //絤策7(и糶)(ρ畍ノ皚糶)
+    //練習7(我寫的)
     string str_A;
     cin>> str_A;
     for(int i_G=str_A.length();i_G>=0;i_G--){
         cout<<str_A[i_G];
     }
 
-    //ρ畍贺糶猭
+    //老師寫的
     int i_Num =0;
     cin >>i_Num;
     int i_Out =0;
@@ -84,7 +84,7 @@ int main()
     */
 
     /*
-    //絤策8(ρ畍糶)
+    //練習8(老師寫的)
     int i_Num =0;
     cin >>i_Num;
 

@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
     /*
-    //�m��2
+    //練習2(老師寫的)
     string s_Msg = "";
     cin >> s_Msg;
 
