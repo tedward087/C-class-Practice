@@ -92,14 +92,20 @@ if(97<=i_A&&i_A>=100){
     }
     */
 
-    /*
+
     //練習5
-    string str_A;
+    string str_A="";
     cout<<"Code:";
     cin >>str_A;
     string str_B ="ABC";
+    string str_D =str_A.substr(1);
     if(str_A[0] ==str_B[0]||str_A[0] ==str_B[1]||str_A[0] ==str_B[2]){
-        int i_C=(str_A[1]+str_A[2])%5;
+        int i_F =stoi(str_D);
+        int i_thousand =i_F/1000;
+        int i_hundred =(i_F-i_thousand*1000)/100;
+        int i_ten =(i_F-i_thousand*1000-i_hundred*100)/10;
+        int i_one =i_F%10;
+        int i_C=(i_thousand+i_hundred)%5;
         char c_C;
         int i_D;
         string str_C;
@@ -127,19 +133,21 @@ if(97<=i_A&&i_A>=100){
         else if(str_A[0]==str_B[2]){
             str_C="visitor";
         }
-        i_D =static_cast<int>(char(str_A[0]));
-        i_D= (i_D+str_A[1]-str_A[2])%str_A[3]+str_A[4];
+
+        int i_E =(int)str_A[0];
+
+        i_D=(i_E+i_thousand-i_hundred)%i_ten+i_one;
         if(i_D==7){
             cout<<str_C<<endl<<c_C<<"\n"<<"Checked, welcome!";
         }
         else{
-            cout << "Error code";
+            cout <<"Error code";
         }
     }
     else{
         cout << "Error code";
     }
-    */
+
 return 0;
 
 }
