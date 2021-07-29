@@ -1,11 +1,12 @@
 #include <iostream>
-
+#include <string>
 using namespace std;
 
-int main()
-{
+
     /*
     //練習3
+    int main()
+{
     for(int i_A=1;i_A<=20;i_A++){
         if(i_A%3 ==0){
             continue;
@@ -22,11 +23,15 @@ int main()
         cout<<i_B<<"\n";
         i_B++;
     }
+    return 0;
+}
     */
 
     /*
     //練習4
     //我寫的
+    int main()
+{
     for(int i_C=1;i_C<=9;i_C++){
         for(int i_D=9;(i_D-i_C)>0;i_D--){
                 cout<<" ";
@@ -36,8 +41,12 @@ int main()
         }
         cout<<endl;
     }
+    return 0;
+}
 
     //老師寫的
+    int main()
+{
     for(int i_Ct=-1;i_Ct <=17;i_Ct+=2){
 
         for(int i_Ct2 =(17/2) - (i_Ct/2);i_Ct2 >=0;i_Ct2--){
@@ -49,10 +58,14 @@ int main()
         }
         cout<<"\n";
     }
+    return 0;
+}
     */
 
     /*
     //練習5
+    int main()
+{
     for(int i_E=1;i_E<=9;i_E++){
         for(int i_F=1;i_F<=9;i_F++){
             cout<<i_E<<"*"<<i_F<<"="<<i_E*i_F<<",\t";
@@ -62,17 +75,59 @@ int main()
         }
         cout<<endl;
     }
+    return 0;
+}
     */
 
     /*
+    //練習6
+    int main()
+{
+    string  str_temp ;
+    string  str_temp2;
+    for(int i_E=1;i_E<=9;i_E++){
+
+        for(int i_F=1;i_F<=9;i_F++){
+
+            if(i_E%4==0&&i_F%4!=0){
+                cout<<"$"<<"*"<<i_F<<"="<<"??"<<",\t";
+            }
+            else if(i_E%4!=0&&i_F%4==0){
+                cout<<i_E<<"*"<<"%"<<"="<<"??"<<",\t";
+            }
+            else if(i_E%4==0&&i_F%4==0){
+                cout<<"$"<<"*"<<"%"<<"="<<"??"<<",\t";
+            }
+            else{
+                    cout<<i_E<<"*"<<i_F<<"="<<i_E*i_F<<",\t";
+                }
+            if(i_F%3 ==0){
+                cout<<"\n";
+            }
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+
+
+
+
+    /*
     //練習7(我寫的)
+    int main()
+{
     string str_A;
     cin>> str_A;
     for(int i_G=str_A.length();i_G>=0;i_G--){
         cout<<str_A[i_G];
     }
+    return 0;
+}
 
     //老師寫的
+    int main()
+{
     int i_Num =0;
     cin >>i_Num;
     int i_Out =0;
@@ -81,10 +136,14 @@ int main()
         i_Out = i_Out*10+(i_Num%10);
     }
     cout<<i_Out<<"\n";
+    return 0;
+}
     */
 
     /*
     //練習8(老師寫的)
+    int main()
+{
     int i_Num =0;
     cin >>i_Num;
 
@@ -114,6 +173,8 @@ int main()
         i_Num--;
         }
         cout<< i_Tmp;
-        */
-    return 0;
+        return 0;
 }
+        */
+
+
