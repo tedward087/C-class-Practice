@@ -177,4 +177,61 @@ using namespace std;
 }
         */
 
+	/*
+	//¾šÁ•9
+	//ÎÒŒ‘µÄ
+	int main(){
+	string str_T;
+	int i_C;
+	string str_G;
+	string str_R;
 
+	cin>>str_T>>i_C;
+	for(int i_Temp=0;i_Temp<=str_T.length()-1;i_Temp++){
+		for(int i_Temp2=0;i_Temp2<i_Temp;i_Temp2++){
+			if(str_T[i_Temp]==str_T[i_Temp2]){
+				str_R="Error, number repeated.\n";
+				cout<<str_R;
+			}
+		}
+	}
+	if(str_R=="Error, number repeated.\n"){}
+	else{
+		for(int i_Temp3=0;i_Temp3<i_C;i_Temp3++){
+		cout<<"Guess Number:";
+		cin>>str_G;
+		int i_A=0;
+		int i_B=0;
+
+		for(int i_Temp=0;i_Temp<=str_G.length()-1;i_Temp++){
+		for(int i_Temp2=0;i_Temp2<i_Temp;i_Temp2++){
+			if(str_G[i_Temp]==str_G[i_Temp2])
+				{cout<<"Error, number repeated.\n";}
+			else if(str_G.length()<str_T.length()||str_G.length()>str_T.length()){
+				cout<<"Length difference!\n";
+			}
+			else{
+				for(int i_Temp4=0;i_Temp4<=str_G.length()-1;i_Temp4++){
+						for(int i_Temp5=0;i_Temp5<=str_G.length()-1;i_Temp5++){
+							if(str_G[i_Temp4]==str_T[i_Temp4])
+								{++i_A;}
+							else if(str_G[i_Temp4]!=str_T[i_Temp4]&&str_G[i_Temp4]!=str_T[i_Temp5])
+								{++i_B;}
+						}
+				}
+			}
+		}
+		}
+	cout<<i_A<<"A"<<i_B<<"B"<<endl;
+	if(i_A==str_T.length()){
+		cout<<"You are right!\n";
+	}
+	else if(i_A!=str_T.length()&&i_Temp3==i_C-1){
+		cout<<"You do not guess the right number!\n";
+	}
+	}
+	}
+	return 0;
+}
+
+*/
