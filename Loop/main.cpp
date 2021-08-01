@@ -235,3 +235,17 @@ using namespace std;
 }
 
 */
+
+int  main(){
+string str_in;
+cin>>str_in;
+if(str_in.length()!=10){
+	cout<<"The length of input is not equal to 10."<<"\n";
+return 0;
+}
+
+
+
+
+
+}

@@ -73,7 +73,7 @@ int fn_GetLCM(int i_Num1, int i_Num2){
 
 */
 
-
+/*
 //老師出的題 3
 //我寫的(沒用迴圈)
 int fn_money(int z);
@@ -110,3 +110,62 @@ else if(z%2==0){
 
 }
 
+*/
+
+/*
+//老師出的題 3
+//老師寫的
+int fn_GetValue(int i_Ith, int i_Goalth);
+
+int main(){
+    int i_Ith=0;
+    std::cin>> i_Ith;
+    std::cout<< fn_GetValue(i_Ith, i_Ith);
+    return 0;
+}
+int fn_GetValue(int i_Ith, int i_Goalth){
+    if(i_Ith <= 0){
+        return 0;
+    }
+    else if(i_Ith == 1){
+        return 4 + 7;
+    }
+    else if(i_Ith == 2){
+        if(i_Goalth % 2 ==0){
+            return fn_GetValue(i_Ith - 1, i_Goalth) +7;
+        }
+        else{
+            return fn_GetValue(i_Ith - 1, i_Goalth) +4;
+        }
+    }
+    else{
+        return fn_GetValue(i_Ith - 1, i_Goalth) + fn_GetValue(i_Ith - 2, i_Goalth);
+    }
+}
+*/
+
+
+/*
+//河內塔 (老師寫的)
+void fn_HTrs(int i_N,char c_St, char c_Tmp, char c_Des);
+
+int main(){
+	int i_N;
+	cin>>i_N;
+	fn_HTrs(i_N,'A','B','C');
+	cout<< "\n";
+}
+
+void fn_HTrs(int i_N,char c_St,char c_Tmp, char c_Des){
+	if(i_N==1){
+		cout<<"Move disk "<<i_N<<" from "
+				<< c_St<<" to "<< c_Des<<"\n";
+	}
+	else{
+		fn_HTrs(i_N-1, c_St, c_Des, c_Tmp);
+		cout<<"Move disk "<<i_N<<" from "
+				<< c_St<<" to "<< c_Des<<"\n";
+		fn_HTrs(i_N-1, c_Tmp, c_St, c_Des);
+	}
+}
+*/
