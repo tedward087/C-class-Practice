@@ -239,13 +239,35 @@ using namespace std;
 int  main(){
 string str_in;
 cin>>str_in;
+bool b_b=true;
 if(str_in.length()!=10){
 	cout<<"The length of input is not equal to 10."<<"\n";
-return 0;
+	b_b=false;
 }
+str_in[0]=toupper(str_in[0]);
+char A='A';
+char Z='Z';
+int i_A=(int)A;
+int i_Z=(int)Z;
+if(i_A<=(int)str_in[0]&&i_Z>=(int)str_in[0]){}
+else{
+	cout<<"The first term of string is not an alphabet."<<"\n";
+	b_b=false;
+}
+for(int i_C=1;i_C<=str_in.length();i_C++){
+	if(i_A<=(int)str_in[i_C]&&i_Z>=(int)str_in[i_C]){
+		cout<<"The second to 10th terms should be numeric terms."<<"\n";
+		b_b=false;
+	}
+}
+if(str_in[1]!=1||str_in[1]!=2)
+	{cout<<"The number of gender should be equal to 1 or 2."<<"\n";
+	b_b=false;
+	}
+if(b_b==false){
+	return 0;
+}
+//對的地方還沒打
 
-
-
-
-
+return 0;
 }
